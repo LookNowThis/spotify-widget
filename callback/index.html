@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Spotify Callback</title>
+</head>
+<body>
+  <h2>Spotify Authorization Code</h2>
+  <p>Copy the code below and paste it back into the chat.</p>
+  <pre id="code"></pre>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get("code");
+    document.getElementById("code").innerText = code;
+  </script>
+</body>
+</html>
