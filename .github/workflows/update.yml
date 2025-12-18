@@ -38,4 +38,3 @@ jobs:
           git add now-playing.svg
           git commit -m "Update now playing" || echo "No changes"
           git push
-
