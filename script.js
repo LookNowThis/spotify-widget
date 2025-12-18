@@ -1,4 +1,4 @@
-const clientId = "TAVO_SPOTIFY_CLIENT_ID";
+const clientId = "027bc5b56c5f428f8e7dff33d28695d1";
 const redirectUri = "https://looknowthis.github.io/spotify-widget/";
 
 function generateCodeVerifier() {
