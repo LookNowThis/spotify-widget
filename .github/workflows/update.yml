@@ -1,14 +1,12 @@
 name: Update Spotify Now Playing
 
 on:
-
-
-schedule:
-- cron: "*/5 * * * *"
-workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
 
 permissions:
-contents: write
+  contents: write
 
 jobs:
   build:
@@ -40,3 +38,4 @@ jobs:
           git add now-playing.svg
           git commit -m "Update now playing" || echo "No changes"
           git push
+
